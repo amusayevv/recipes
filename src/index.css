@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 40px;
+    background: #DFF0DF;
+    font-family: Radley;
+    color: #0e352d;
+}
+
+h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #0E352D;
+    color: white;
+    font-family: Radley;
+}
+
+.cards-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+h3 {
+    color: #FFF;
+    font-family: Radley;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-description {
+    color: #FFF;
+    font-family: Radley;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    line-height: normal;
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+    justify-content: start;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 200px;
+    background: #DFF0DF;
+    color: #0B362F;
+}
+
+.difficulty {
+    background: #8A5E00;
+    color: white;   
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.date {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 16px;   
+}
+
+.more {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    font-family: Radley;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-top-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    color: #0e352d;
+    font-size: 24px;
+    font-family: Radley;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+button:hover {
+    color: #8a9e9a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+}
