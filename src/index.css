@@ -8,8 +8,10 @@
 
 body {
     padding: 40px;
-    background: #DFF0DF;
-    font-family: Radley;
+    background: #dff0df;
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 16px;
     color: #0e352d;
 }
 
@@ -17,6 +19,8 @@ h1 {
     padding-bottom: 20px;
     font-size: 40px;
     font-style: italic;
+    font-family: Radley;
+    font-weight: normal;
 }
 
 .card {
@@ -27,7 +31,7 @@ h1 {
     gap: 32px;
     flex: 1 0 0;
     border-radius: 16px;
-    background: #0E352D;
+    background: #0e352d;
     color: white;
     font-family: Radley;
 }
@@ -39,7 +43,7 @@ h1 {
 }
 
 h3 {
-    color: #FFF;
+    color: #fff;
     font-family: Radley;
     font-size: 32px;
     font-style: normal;
@@ -48,11 +52,11 @@ h3 {
 }
 
 .card-description {
-    color: #FFF;
-    font-family: Radley;
+    color: #fff;
+    font-family: outfit;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     line-height: normal;
 }
@@ -60,25 +64,31 @@ h3 {
 ul {
     display: flex;
     gap: 8px;
-    list-style-type: none;
+    /* list-style-type: none; */
     justify-content: start;
     padding: 0;
 }
 
-li {
+.tag,
+.difficulty {
     display: flex;
     padding: 4px 8px;
     justify-content: center;
     align-items: center;
     gap: 8px;
     border-radius: 200px;
-    background: #DFF0DF;
-    color: #0B362F;
+    background: #dff0df;
+    color: #0b362f;
+    list-style-type: none;
 }
 
 .difficulty {
-    background: #8A5E00;
-    color: white;   
+    color: white;
+}
+
+li {
+    font-family: Outfit;
+    font-size: 16px;
 }
 
 .card-text {
@@ -90,12 +100,14 @@ li {
 }
 
 .date {
-    color: rgba(255, 255, 255, 0.80);
-    font-size: 16px;   
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-family: Outfit;
+    font-weight: 300;
 }
 
 .more {
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     font-family: Radley;
     background: none;
@@ -148,4 +160,42 @@ button:hover {
 .nav-links {
     display: flex;
     gap: 16px;
+}
+
+#search {
+}
+
+.middle-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recipe-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.popup-bg {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000080;
+}
+
+.recipe-popup > .card {
+    z-index: 3;
+    padding: 24px 40px;
 }
