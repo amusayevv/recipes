@@ -149,3 +149,71 @@ button:hover {
     display: flex;
     gap: 16px;
 }
+
+
+/* home page design */
+
+.header-h2{
+    font-size: 35px;
+    /* font-family: 'Playfair Display', serif; */
+ 
+}
+
+.header-h3{
+    color: #0e352d;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.paragraph{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+   
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 9px;
+    padding: 9rem;
+    background: #eef7ee; 
+    border: 1px solid #dfe2df; 
+    border-radius: 40px;  
+}
+
+.feature{
+    text-align: center;
+    padding: 2rem 1rem; 
+} 
+
+.icon{
+    font-size: 2rem;
+    color: #ff5722;
+    margin-bottom: 0.5rem;
+}
+
+.feature-align{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-style{
+    flex: 1;
+    max-width: 350px;
+    padding: 2rem;
+    background: #eef7ee; 
+    border: 1px solid #dfe2df; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.new{
+    text-align: center;
+    margin-bottom: 9px;  
+    font-size: 35px;
+}
+
+
