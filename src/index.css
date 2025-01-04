@@ -246,3 +246,10 @@ button.primary:hover {
     display: flex;
     gap: 8px;
 }
+
+ul > p,
+ol > p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
