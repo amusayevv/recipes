@@ -175,11 +175,11 @@ button:hover {
 
 .center{
     text-align: center;
-    margin-bottom: 9px;
-    padding: 9rem;
-    background: #eef7ee; 
+    margin-bottom: 5px;
+    padding: 10rem;
     border: 1px solid #dfe2df; 
     border-radius: 40px;  
+    background-image: url("image/food.jpg");
 }
 
 .feature{

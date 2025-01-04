@@ -4,7 +4,7 @@ function Home () {
     return( 
         <div>
             <section className="center">
-                <h2 className="header-h2">Welcome to the Recipe Manager App!</h2>
+                <h2 className="header-h2">Welcome to the <br/>Recipe Manager App!</h2>
                 <p className="paragraph">The Best App for Recipes You Want Try Today. </p>
             </section>
 
