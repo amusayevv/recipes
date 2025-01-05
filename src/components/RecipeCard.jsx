@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const RecipeCard = (props) => {
     const difficulty_level = props.difficulty_level;
@@ -13,11 +15,42 @@ const RecipeCard = (props) => {
         difficulty_color = { backgroundColor: "#8a1000" };
     }
 
+    const [isHovered, setIsHovered] = useState(false);
+    function handleHover() {
+        setIsHovered(true);
+    }
+    function handleMouseLeave() {
+        setIsHovered(false);
+    }
+
     return (
-        <div className="card">
+        <div
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleHover}
+            className="card"
+        >
             <div className="card-top-cnt">
                 <div className="card-text">
-                    <h3 className="card-title">{props.title}</h3>
+                    <div className="title-flex">
+                        <h3 className="card-title">{props.title}</h3>
+
+                        {isHovered && (
+                            <div className="icons-flex">
+                                <button
+                                    onClick={props.handleEdit}
+                                    className="button-edit button-icon"
+                                >
+                                    <EditIcon />
+                                </button>
+                                <button
+                                    onClick={() => props.handleDelete(props.id)}
+                                    className="button-delete button-icon"
+                                >
+                                    <DeleteIcon />
+                                </button>
+                            </div>
+                        )}
+                    </div>
                     <p className="card-description">{props.description}</p>
                 </div>
                 <div className="tags">

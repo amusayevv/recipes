@@ -2,20 +2,29 @@ import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import SaveOutlinedIcon from "@mui/icons-material/SaveOutlined";
 
-function AddPopup({
-    closeAddPopup,
+function EditRecipe({
+    closeEditPopup,
     allRecipes,
     setAllRecipes,
     setFilteredRecipes,
+    title,
+    description,
+    ingredients,
+    difficulty_level,
+    preparation_steps,
+    tags,
+    last_updated,
+    id,
+    setTriggerUseEffect,
 }) {
     const [formData, setFormData] = useState({
-        title: "",
-        description: "",
-        ingredients: "",
-        difficulty_level: "Easy",
-        preparation_steps: "",
-        tags: "",
-        last_updated: "",
+        title: title,
+        description: description,
+        ingredients: ingredients.join(", "),
+        difficulty_level: difficulty_level,
+        preparation_steps: preparation_steps.join(", "),
+        tags: tags.join(", "),
+        last_updated: last_updated,
     });
 
     const handleChange = (e) => {
@@ -32,7 +41,7 @@ function AddPopup({
         const currentDate = new Date().toISOString().split("T")[0];
         const newRecipe = {
             ...formData,
-            id: (allRecipes.length + 1).toString(),
+            id: id.toString(),
             ingredients: formData.ingredients
                 .split(",")
                 .map((item) => item.trim()),
@@ -43,33 +52,37 @@ function AddPopup({
             last_updated: currentDate,
         };
 
-        fetch("http://localhost:3000/recipes", {
-            method: "POST",
+        fetch(`http://localhost:3000/recipes/${id}`, {
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(newRecipe),
         })
-            .then((response) => response.json())
-            .then((data) => {
-                setAllRecipes((prevRecipes) => [...prevRecipes, data]);
-                setFilteredRecipes((prevRecipes) => [...prevRecipes, data]);
-                alert("New recipe added successfully");
-                closeAddPopup();
+            .then((response) => {
+                if (!response.ok) {
+                    console.log("Error");
+                    return;
+                }
+                return response.json();
             })
-            .catch((error) => console.error("Error adding recipe:", error));
+            .then((data) => {
+                console.log(data);
+                setTriggerUseEffect((prev) => prev + 1);
+                closeEditPopup();
+            });
     };
 
     return (
         <div className="add-popup">
-            <div className="popup-bg" onClick={closeAddPopup}></div>
+            <div className="popup-bg" onClick={closeEditPopup}></div>
             <form className="add" onSubmit={handleSubmit}>
                 <div className="add-heading-flex">
                     <h3 className="add-heading">Add new recipe</h3>
                     <button
                         type="button"
                         className="close-button"
-                        onClick={closeAddPopup}
+                        onClick={closeEditPopup}
                     >
                         <CloseIcon />
                     </button>
@@ -149,4 +162,4 @@ function AddPopup({
     );
 }
 
-export default AddPopup;
+export default EditRecipe;

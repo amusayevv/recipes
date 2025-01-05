@@ -4,8 +4,8 @@ import Search from "../components/Search";
 import AddIcon from "@mui/icons-material/Add";
 import AddPopup from "../components/AddPopup";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import SwapVertIcon from "@mui/icons-material/SwapVert";
+import EditRecipe from "../components/EditRecipe";
 
 function Recipe() {
     const [allRecipes, setAllRecipes] = useState([]);
@@ -13,6 +13,8 @@ function Recipe() {
     const [selectedRecipe, setSelectedRecipe] = useState(null);
     const [isAddPopupVisible, setIsAddPopupVisible] = useState(false);
     const [sortDirection, setSortDirection] = useState("asc");
+    const [editedRecipe, setEditedRecipe] = useState(null);
+    const [triggerUseEffect, setTriggerUseEffect] = useState(0);
 
     useEffect(() => {
         fetch("http://localhost:3000/recipes")
@@ -22,7 +24,7 @@ function Recipe() {
                 setFilteredRecipes(data);
             })
             .catch((err) => console.error("Error fetching recipes:", err));
-    }, []);
+    }, [triggerUseEffect]);
 
     function handleClick(id) {
         const currentRecipe = allRecipes.find((item) => item.id === id);
@@ -54,6 +56,10 @@ function Recipe() {
 
     function closeAddPopup() {
         setIsAddPopupVisible(false);
+    }
+    function closeEditPopup() {
+        setIsAddPopupVisible(false);
+        setEditedRecipe(null);
     }
 
     const allTags = [...new Set(allRecipes.flatMap((recipe) => recipe.tags))];
@@ -107,6 +113,21 @@ function Recipe() {
         }
     }
 
+    function handleDelete(id) {
+        console.log(allRecipes[id - 1]);
+
+        fetch(`http://localhost:3000/recipes/${id}`, {
+            method: "DELETE",
+        }).then(() => {
+            setTriggerUseEffect((prev) => prev + 1);
+        });
+    }
+
+    function handleEdit(id) {
+        const currentRecipe = allRecipes.find((item) => item.id === id);
+        setEditedRecipe(currentRecipe);
+    }
+
     return (
         <div>
             <div className="search-flex">
@@ -157,6 +178,8 @@ function Recipe() {
                         tags={item.tags}
                         last_updated={item.last_updated}
                         openPopup={() => handleClick(item.id)}
+                        handleDelete={() => handleDelete(item.id)}
+                        handleEdit={() => handleEdit(item.id)}
                     />
                 ))}
             </div>
@@ -197,7 +220,33 @@ function Recipe() {
                 </div>
             )}
 
-            {isAddPopupVisible && <AddPopup closeAddPopup={closeAddPopup} />}
+            {isAddPopupVisible && (
+                <AddPopup
+                    closeAddPopup={closeAddPopup}
+                    allRecipes={allRecipes}
+                    setAllRecipes={setAllRecipes}
+                    setFilteredRecipes={setFilteredRecipes}
+                />
+            )}
+
+            {editedRecipe && (
+                <EditRecipe
+                    closeEditPopup={closeEditPopup}
+                    allRecipes={allRecipes}
+                    setAllRecipes={setAllRecipes}
+                    setFilteredRecipes={setFilteredRecipes}
+                    key={editedRecipe.id}
+                    id={editedRecipe.id}
+                    title={editedRecipe.title}
+                    description={editedRecipe.description}
+                    difficulty_level={editedRecipe.difficulty_level}
+                    tags={editedRecipe.tags}
+                    last_updated={editedRecipe.last_updated}
+                    ingredients={editedRecipe.ingredients}
+                    preparation_steps={editedRecipe.preparation_steps}
+                    setTriggerUseEffect={setTriggerUseEffect}
+                />
+            )}
         </div>
     );
 }
