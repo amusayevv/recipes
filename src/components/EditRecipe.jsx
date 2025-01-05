@@ -4,9 +4,6 @@ import SaveOutlinedIcon from "@mui/icons-material/SaveOutlined";
 
 function EditRecipe({
     closeEditPopup,
-    allRecipes,
-    setAllRecipes,
-    setFilteredRecipes,
     title,
     description,
     ingredients,

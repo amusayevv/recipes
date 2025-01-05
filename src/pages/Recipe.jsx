@@ -37,6 +37,7 @@ function Recipe() {
 
     function handleSearch(event) {
         const searchText = event.target.value.toLowerCase();
+        if (!searchText) setFilteredRecipes(allRecipes);
         const filtered = allRecipes.filter((item) => {
             const titleMatch = item.title.toLowerCase().includes(searchText);
             const descriptionMatch = item.description
