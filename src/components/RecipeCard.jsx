@@ -35,7 +35,7 @@ const RecipeCard = (props) => {
             {props.children}
 
             <div className="details">
-                <div className="date">last updated: 2023-10-05 12:00</div>
+                <div className="date">last updated: {props.last_updated}</div>
                 <button
                     className="more"
                     onClick={() => props.openPopup(props.id)}

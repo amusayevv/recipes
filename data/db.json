@@ -23,7 +23,7 @@
             ],
             "tags": ["Italian", "Pasta", "Quick Meal"],
             "difficulty_level": "Medium",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 2,
@@ -52,7 +52,7 @@
             ],
             "tags": ["Dessert", "Cookies", "Sweet"],
             "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 3,
@@ -72,7 +72,7 @@
             ],
             "tags": ["Salad", "Vegetarian", "Quick Meal"],
             "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 4,
@@ -97,7 +97,7 @@
             ],
             "tags": ["Mexican", "Tacos", "Quick Meal"],
             "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 5,
@@ -125,7 +125,7 @@
             ],
             "tags": ["Indian", "Curry", "Spicy"],
             "difficulty_level": "Medium",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 6,
@@ -152,7 +152,7 @@
             ],
             "tags": ["Breakfast", "Pancakes", "Sweet"],
             "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 7,
@@ -176,7 +176,7 @@
             ],
             "tags": ["Mexican", "Dip", "Vegetarian"],
             "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 8,
@@ -210,7 +210,7 @@
             ],
             "tags": ["Italian", "Pasta", "Comfort Food"],
             "difficulty_level": "Hard",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 9,
@@ -238,7 +238,7 @@
             ],
             "tags": ["Italian", "Pasta", "Comfort Food"],
             "difficulty_level": "Medium",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         },
         {
             "id": 10,
@@ -268,7 +268,7 @@
             ],
             "tags": ["Asian", "Vegetarian", "Quick Meal"],
             "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
+            "last_updated": "2023-10-05"
         }
     ]
 }
