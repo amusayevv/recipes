@@ -1,6 +1,7 @@
 {
   "recipes": [
     {
+      "id": "1",
       "title": "Caesar Salad",
       "description": "A fresh, crisp salad with romaine lettuce, croutons, and Caesar dressing.",
       "ingredients": [
@@ -21,10 +22,10 @@
         "Vegetarian",
         "Quick Meal"
       ],
-      "last_updated": "2025-01-05",
-      "id": "3"
+      "last_updated": "2025-01-05"
     },
     {
+      "id": "2",
       "title": "Beef Tacos",
       "description": "Tasty beef tacos with a variety of toppings.",
       "ingredients": [
@@ -54,11 +55,10 @@
         "Tacos",
         "Quick Meal"
       ],
-      "last_updated": "2025-01-05",
-      "id": "4"
+      "last_updated": "2025-01-05"
     },
     {
-      "id": "5",
+      "id": "3",
       "title": "Chicken Curry",
       "description": "A flavorful chicken curry with a rich, spicy sauce.",
       "ingredients": [
@@ -90,7 +90,7 @@
       "last_updated": "2023-10-05"
     },
     {
-      "id": "6",
+      "id": "4",
       "title": "Pancakes",
       "description": "Fluffy pancakes perfect for a weekend breakfast.",
       "ingredients": [
@@ -121,6 +121,7 @@
       "last_updated": "2023-10-05"
     },
     {
+      "id": "5",
       "title": "Lasagna",
       "description": "A hearty and cheesy lasagna with layers of pasta, meat sauce, and cheese.",
       "ingredients": [
@@ -169,11 +170,10 @@
         "Pasta",
         "Comfort Food"
       ],
-      "last_updated": "2025-01-05",
-      "id": "8"
+      "last_updated": "2025-01-05"
     },
     {
-      "id": "9",
+      "id": "6",
       "title": "Chicken Alfredo",
       "description": "Creamy chicken Alfredo pasta with a rich and cheesy sauce.",
       "ingredients": [
@@ -205,7 +205,7 @@
       "last_updated": "2023-10-05"
     },
     {
-      "id": "12",
+      "id": "7",
       "title": "Plov",
       "description": "National food of Azerbaijani cuisine",
       "ingredients": [
@@ -227,6 +227,7 @@
       "last_updated": "2025-01-05"
     },
     {
+      "id": "8",
       "title": "Carbonara",
       "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
       "ingredients": [
@@ -254,10 +255,10 @@
         "Pasta",
         "Quick Meal"
       ],
-      "last_updated": "2025-01-05",
-      "id": "1"
+      "last_updated": "2025-01-05"
     },
     {
+      "id": "9",
       "title": "Vegetable Stir Fry",
       "description": "A quick and healthy vegetable stir fry with a savory sauce.",
       "ingredients": [
@@ -304,8 +305,7 @@
         "Vegetarian",
         "Quick Meal"
       ],
-      "last_updated": "2025-01-05",
-      "id": "10"
+      "last_updated": "2025-01-05"
     },
     {
       "id": "10",
@@ -328,6 +328,338 @@
         "Meat"
       ],
       "last_updated": "2025-01-05"
+    },
+    {
+      "id": "11",
+      "title": "Baklava",
+      "description": "A sweet pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.",
+      "ingredients": [
+        "1 package phyllo dough",
+        "1 cup butter",
+        "3 cups chopped nuts",
+        "1 teaspoon ground cinnamon",
+        "1 cup water",
+        "1 cup white sugar",
+        "1 teaspoon vanilla extract",
+        "1/2 cup honey"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Preheat oven to 350°F (175°C).",
+        "Butter the bottom and sides of a 9x13-inch baking dish.",
+        "Layer 10 sheets of phyllo dough in the dish",
+        "brushing each sheet with melted butter.",
+        "In a bowl",
+        "mix together the chopped nuts and cinnamon.",
+        "Sprinkle a layer of the nut mixture over the phyllo dough.",
+        "Repeat the layers until all the nut mixture is used",
+        "ending with a top layer of phyllo dough.",
+        "Cut the baklava into diamond shapes using a sharp knife.",
+        "Bake for 50-60 minutes",
+        "or until golden brown and crisp.",
+        "While the baklava is baking",
+        "combine the water",
+        "sugar",
+        "vanilla extract",
+        "and honey in a saucepan.",
+        "Bring to a boil and simmer for 10 minutes.",
+        "Pour the hot syrup over the hot baklava",
+        "and let cool before serving."
+      ],
+      "tags": [
+        "Dessert",
+        "Sweet",
+        "Azerbaijan"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "12",
+      "title": "Sushi",
+      "description": "A Japanese dish consisting of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits.",
+      "ingredients": [
+        "2 cups sushi rice",
+        "2 1/2 cups water",
+        "1/2 cup rice vinegar",
+        "1/4 cup sugar",
+        "1 teaspoon salt",
+        "Nori seaweed sheets",
+        "Assorted fillings (e.g., fish, avocado, cucumber, crab)",
+        "Soy sauce",
+        "Wasabi",
+        "Pickled ginger"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Rinse the sushi rice in a fine-mesh strainer until the water runs clear.",
+        "Combine the rice and water in a rice cooker and cook according to the manufacturer's instructions.",
+        "In a small saucepan",
+        "combine the rice vinegar",
+        "sugar",
+        "and salt. Heat over low heat until the sugar dissolves.",
+        "Transfer the cooked rice to a large bowl and fold in the vinegar mixture.",
+        "Let the rice cool to room temperature.",
+        "Place a sheet of nori on a bamboo sushi mat",
+        "and spread a thin layer of rice over the nori",
+        "leaving a 1-inch border at the top.",
+        "Arrange the fillings in a line across the center of the rice.",
+        "Roll the sushi tightly using the bamboo mat",
+        "and seal the edge with a little water.",
+        "Slice the roll into bite-sized pieces and serve with soy sauce",
+        "wasabi",
+        "and pickled ginger."
+      ],
+      "tags": [
+        "Japanese",
+        "Sushi",
+        "Seafood"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "13",
+      "title": "Vietnamese Pho",
+      "description": "Traditional Vietnamese noodle soup with rich broth and herbs.",
+      "ingredients": [
+        "Rice noodles",
+        "Beef bones",
+        "Beef slices",
+        "Bean sprouts",
+        "Thai basil",
+        "Cilantro",
+        "Star anise",
+        "Cinnamon sticks",
+        "Fish sauce"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Simmer bones with spices for 6-8 hours to make broth.",
+        "Cook rice noodles according to package.",
+        "Prepare herb plate with basil, sprouts, and lime.",
+        "Assemble bowls with noodles and raw beef slices.",
+        "Pour hot broth over to cook beef.",
+        "Serve with herbs and sauces."
+      ],
+      "tags": [
+        "Vietnamese",
+        "Soup",
+        "Comfort Food"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "14",
+      "title": "Spanish Paella",
+      "description": "Traditional Spanish rice dish with seafood and saffron.",
+      "ingredients": [
+        "Bomba rice",
+        "Shrimp",
+        "Mussels",
+        "Chorizo",
+        "Saffron threads",
+        "Bell peppers",
+        "Peas",
+        "Chicken stock",
+        "White wine"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Toast saffron and steep in white wine.",
+        "Cook chorizo and set aside.",
+        "Sauté vegetables in paella pan.",
+        "Add rice and toast lightly.",
+        "Add stock and saffron mixture.",
+        "Add seafood in proper order.",
+        "Create socarrat at the end."
+      ],
+      "tags": [
+        "Spanish",
+        "Seafood",
+        "Rice"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "15",
+      "title": "French Onion Soup",
+      "description": "Classic French soup with caramelized onions and melted cheese.",
+      "ingredients": [
+        "6 large onions",
+        "Beef broth",
+        "French bread",
+        "Gruyere cheese",
+        "Butter",
+        "White wine",
+        "Thyme",
+        "Bay leaves"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Slowly caramelize onions for 1 hour.",
+        "Add wine and reduce.",
+        "Add broth and herbs, simmer for 30 minutes.",
+        "Toast bread slices.",
+        "Fill bowls with soup, top with bread and cheese.",
+        "Broil until cheese is bubbly and brown."
+      ],
+      "tags": [
+        "French",
+        "Soup",
+        "Comfort Food"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "16",
+      "title": "Tandoori Chicken",
+      "description": "Indian-style yogurt marinated chicken cooked in high heat.",
+      "ingredients": [
+        "Chicken legs and thighs",
+        "Yogurt",
+        "Tandoori spice mix",
+        "Lemon juice",
+        "Ginger paste",
+        "Garlic paste",
+        "Red food coloring (optional)",
+        "Mint chutney"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Make marinade with yogurt and spices.",
+        "Marinate chicken for 4-24 hours.",
+        "Preheat oven to 450°F.",
+        "Cook chicken, basting occasionally.",
+        "Finish under broiler for char.",
+        "Serve with mint chutney and naan."
+      ],
+      "tags": [
+        "Indian",
+        "Chicken",
+        "Spicy"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "17",
+      "title": "Thai Green Curry",
+      "description": "Aromatic coconut curry with vegetables and chicken.",
+      "ingredients": [
+        "Green curry paste",
+        "Coconut milk",
+        "Chicken breast",
+        "Thai eggplants",
+        "Bamboo shoots",
+        "Thai basil",
+        "Fish sauce",
+        "Palm sugar"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Fry curry paste in coconut cream.",
+        "Add chicken and cook through.",
+        "Add remaining coconut milk and vegetables.",
+        "Season with fish sauce and palm sugar.",
+        "Simmer until vegetables are tender.",
+        "Finish with Thai basil."
+      ],
+      "tags": [
+        "Thai",
+        "Curry",
+        "Spicy"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "18",
+      "title": "Chocolate Soufflé",
+      "description": "Light and airy chocolate dessert that rises dramatically.",
+      "ingredients": [
+        "Dark chocolate",
+        "Butter",
+        "Eggs",
+        "Sugar",
+        "Vanilla extract",
+        "Flour",
+        "Salt",
+        "Powdered sugar"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Prepare ramekins with butter and sugar.",
+        "Melt chocolate and butter.",
+        "Separate eggs and make base mixture.",
+        "Whip egg whites to stiff peaks.",
+        "Fold whites into chocolate base.",
+        "Fill ramekins and bake immediately.",
+        "Serve right away with powdered sugar."
+      ],
+      "tags": [
+        "French",
+        "Dessert",
+        "Chocolate"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "19",
+      "title": "Beef Wellington",
+      "description": "Luxurious dish of beef tenderloin wrapped in pastry.",
+      "ingredients": [
+        "Beef tenderloin",
+        "Puff pastry",
+        "Mushroom duxelles",
+        "Prosciutto",
+        "Egg wash",
+        "Dijon mustard",
+        "Thyme",
+        "Sea salt"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Sear beef and coat with mustard.",
+        "Make mushroom duxelles.",
+        "Layer prosciutto and duxelles.",
+        "Wrap beef in pastry.",
+        "Chill thoroughly.",
+        "Brush with egg wash and score.",
+        "Bake until golden and desired doneness."
+      ],
+      "tags": [
+        "British",
+        "Beef",
+        "Special Occasion"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "title": "Tiramisu",
+      "description": "Classic Italian dessert with coffee-soaked ladyfingers.",
+      "ingredients": [
+        "Ladyfinger cookies",
+        "Mascarpone cheese",
+        "Strong coffee",
+        "Eggs",
+        "Sugar",
+        "Cocoa powder",
+        "Marsala wine (optional)",
+        "Vanilla extract"
+      ],
+      "difficulty_level": "Easy",
+      "preparation_steps": [
+        "Prepare strong coffee and let cool.",
+        "Make mascarpone cream mixture.",
+        "Dip ladyfingers in coffee mixture.",
+        "Layer cookies and cream mixture.",
+        "Refrigerate for at least 4 hours.",
+        "Dust with cocoa before serving."
+      ],
+      "tags": [
+        "Italian",
+        "Dessert",
+        "No-Bake"
+      ],
+      "last_updated": "2025-01-06",
+      "id": "20"
     }
   ]
 }

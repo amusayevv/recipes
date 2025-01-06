@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import SaveOutlinedIcon from "@mui/icons-material/SaveOutlined";
 
-function AddPopup({
-    closeAddPopup,
-    allRecipes,
-    setAllRecipes,
-    setFilteredRecipes,
-}) {
+function AddPopup({ closeAddPopup, allRecipes, setTriggerUseEffect }) {
     const [formData, setFormData] = useState({
         title: "",
         description: "",
@@ -30,9 +25,14 @@ function AddPopup({
     const handleSubmit = (e) => {
         e.preventDefault();
         const currentDate = new Date().toISOString().split("T")[0];
+        const maxId = allRecipes.reduce(
+            (max, recipe) => Math.max(max, parseInt(recipe.id, 10)),
+            0
+        );
+
         const newRecipe = {
             ...formData,
-            id: (allRecipes.length + 1).toString(),
+            id: (maxId + 1).toString(),
             ingredients: formData.ingredients
                 .split(",")
                 .map((item) => item.trim()),
@@ -51,9 +51,8 @@ function AddPopup({
             body: JSON.stringify(newRecipe),
         })
             .then((response) => response.json())
-            .then((data) => {
-                setAllRecipes((prevRecipes) => [...prevRecipes, data]);
-                setFilteredRecipes((prevRecipes) => [...prevRecipes, data]);
+            .then(() => {
+                setTriggerUseEffect((prev) => prev + 1);
                 alert("New recipe added successfully");
                 closeAddPopup();
             })

@@ -6,6 +6,7 @@ import AddPopup from "../components/AddPopup";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import SwapVertIcon from "@mui/icons-material/SwapVert";
 import EditRecipe from "../components/EditRecipe";
+import Pagination from "../components/Pagination";
 
 function Recipe() {
     const [allRecipes, setAllRecipes] = useState([]);
@@ -15,6 +16,8 @@ function Recipe() {
     const [sortDirection, setSortDirection] = useState("asc");
     const [editedRecipe, setEditedRecipe] = useState(null);
     const [triggerUseEffect, setTriggerUseEffect] = useState(0);
+    const [page, setPage] = useState(1);
+    const [recipesPerPage, setRecipesPerPage] = useState(6);
 
     useEffect(() => {
         fetch("http://localhost:3000/recipes")
@@ -92,7 +95,7 @@ function Recipe() {
         if (sortingComparator === "Difficulty") {
             const difficultyOrder = { easy: 1, medium: 2, hard: 3 };
 
-            const sorted = [...filteredRecipes].sort((a, b) => {
+            const sorted = [...allRecipes].sort((a, b) => {
                 const comparison =
                     difficultyOrder[a.difficulty_level.toLowerCase()] -
                     difficultyOrder[b.difficulty_level.toLowerCase()];
@@ -103,8 +106,26 @@ function Recipe() {
             setFilteredRecipes(sorted);
             setSortDirection(sortDirection === "asc" ? "desc" : "asc");
         } else if (sortingComparator === "Title") {
-            const sorted = [...filteredRecipes].sort((a, b) => {
+            const sorted = [...allRecipes].sort((a, b) => {
                 const comparison = a.title.localeCompare(b.title);
+                return sortDirection === "asc" ? comparison : -comparison;
+            });
+
+            console.log(sorted);
+            setFilteredRecipes(sorted);
+            setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+        } else if (sortingComparator === "Time") {
+            const sorted = [...allRecipes].sort((a, b) => {
+                const comparison =
+                    new Date(a.last_updated) - new Date(b.last_updated);
+                return sortDirection === "asc" ? comparison : -comparison;
+            });
+            console.log(sorted);
+            setFilteredRecipes(sorted);
+            setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+        } else if (sortingComparator === "Tags") {
+            const sorted = [...allRecipes].sort((a, b) => {
+                const comparison = a.tags[0].localeCompare(b.tags[0]);
                 return sortDirection === "asc" ? comparison : -comparison;
             });
 
@@ -115,8 +136,6 @@ function Recipe() {
     }
 
     function handleDelete(id) {
-        console.log(allRecipes[id - 1]);
-
         fetch(`http://localhost:3000/recipes/${id}`, {
             method: "DELETE",
         }).then(() => {
@@ -128,6 +147,12 @@ function Recipe() {
         const currentRecipe = allRecipes.find((item) => item.id === id);
         setEditedRecipe(currentRecipe);
     }
+
+    useEffect(() => {
+        const lastPostIndex = page * recipesPerPage;
+        const firstPostIndex = lastPostIndex - recipesPerPage;
+        setFilteredRecipes(allRecipes.slice(firstPostIndex, lastPostIndex));
+    }, [allRecipes, page, recipesPerPage]);
 
     return (
         <div>
@@ -166,6 +191,12 @@ function Recipe() {
                 </button>
                 <button onClick={handleSort} className="primary">
                     Title <SwapVertIcon />
+                </button>
+                <button onClick={handleSort} className="primary">
+                    Time <SwapVertIcon />
+                </button>
+                <button onClick={handleSort} className="primary">
+                    Tags <SwapVertIcon />
                 </button>
             </div>
             <div className="cards-flex">
@@ -227,6 +258,7 @@ function Recipe() {
                     allRecipes={allRecipes}
                     setAllRecipes={setAllRecipes}
                     setFilteredRecipes={setFilteredRecipes}
+                    setTriggerUseEffect={setTriggerUseEffect}
                 />
             )}
 
@@ -248,6 +280,12 @@ function Recipe() {
                     setTriggerUseEffect={setTriggerUseEffect}
                 />
             )}
+
+            <Pagination
+                recipesPerPage={recipesPerPage}
+                totalRecipes={allRecipes.length}
+                paginate={setPage}
+            />
         </div>
     );
 }
