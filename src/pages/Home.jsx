@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import RecipeCard from "../components/RecipeCard";
 
-function Home () {
-    return( 
+function Home() {
+    const [latestRecipe, setLatestRecipe] = useState(null);
+
+    useEffect(() => {
+        fetch("http://localhost:3000/recipes")
+            .then((res) => res.json())
+            .then((data) => {
+                // Sort recipes by last_updated in descending order
+                const sortedRecipes = data.sort((a, b) => 
+                    new Date(b.last_updated) - new Date(a.last_updated)
+                );
+                // Get the most recent recipe
+                setLatestRecipe(sortedRecipes[0]);
+            })
+            .catch((err) => console.error("Error fetching recipes:", err));
+    }, []);
+
+    return (
         <div>
             <section className="center">
                 <h2 className="header-h2">Welcome to the <br/>Recipe Manager App!</h2>
@@ -32,29 +49,41 @@ function Home () {
 
             <br/><br/><br/><br/><br/>
 
-
             <section>
-            <h2 className="new">Features</h2><br/><br/><br/>
-            <div className="feature-align">
-                    <div >
-                        <h3 className="header-h3">Popular Recipe</h3>
-                        <p></p>
-                    </div>
-                    <div>
-                        <h3 className="header-h3">New Recipe</h3>
-                        <p></p>
-                    </div>
-                    </div>
-            </section>
+                <h2 className="new">Latest Recipe</h2><br/><br/><br/>
+                <div className="latest__recipe">
+                {latestRecipe && (
+            <RecipeCard
+            key={latestRecipe.id}
+            id={latestRecipe.id}
+            title={latestRecipe.title}
+            description={latestRecipe.description}
+            difficulty_level={latestRecipe.difficulty_level}
+            tags={latestRecipe.tags}
+            last_updated={latestRecipe.last_updated}
+            openPopup={() => handleClick(latestRecipe.id)}
+          >
+            <div className="middle-flex">
+              <ol>
+                <p>
+                  {latestRecipe.preparation_steps.map((item) => {
+                    return <li>{item}</li>;
+                  })}
+                </p>
+              </ol>
 
-            {/* <section>
-                <h2 className="header-h2">Featured Recipe</h2>
-                <div classname="featured">
-                    <h3 className="header-h3">name of recipe</h3>
-                    <p className="paragraph">ingredients</p>
-                    <a href="#" target="_blank">View Full Recipe</a>
+              <ul>
+                <p>
+                  {latestRecipe.ingredients.map((item) => {
+                    return <li>{item}</li>;
+                  })}
+                </p>
+              </ul>
+                        </div>
+                    </RecipeCard>
+                )}
                 </div>
-            </section> */}
+            </section>
 
             <br /><br /><br /><br />
 
@@ -62,12 +91,10 @@ function Home () {
                 <h2 className="new">Projects</h2>
                 <p className="paragraph">We had two projects during this Web & Mobile 1 class. This app is one these projects. 
                     Another one was about creating extension:   
-                         <a href="https://github.com/amusayevv/auto-form-filler.git" target="_blank"> GitHub repository link. </a>
+                    <a href="https://github.com/amusayevv/auto-form-filler.git" target="_blank"> GitHub repository link. </a>
                 </p>
             </section>
-            
         </div>
-
     );
 }
 

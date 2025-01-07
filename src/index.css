@@ -479,3 +479,14 @@ nav {
     align-items: center;
     justify-content: end;
 }
+
+.latest__recipe {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.latest__recipe > .card {
+    padding: 40px 60px;
+    margin-top: -40px;
+}
