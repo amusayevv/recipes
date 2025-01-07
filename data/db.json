@@ -448,38 +448,6 @@
       "last_updated": "2025-01-06"
     },
     {
-      "id": "14",
-      "title": "Spanish Paella",
-      "description": "Traditional Spanish rice dish with seafood and saffron.",
-      "ingredients": [
-        "Bomba rice",
-        "Shrimp",
-        "Mussels",
-        "Chorizo",
-        "Saffron threads",
-        "Bell peppers",
-        "Peas",
-        "Chicken stock",
-        "White wine"
-      ],
-      "difficulty_level": "Hard",
-      "preparation_steps": [
-        "Toast saffron and steep in white wine.",
-        "Cook chorizo and set aside.",
-        "Sauté vegetables in paella pan.",
-        "Add rice and toast lightly.",
-        "Add stock and saffron mixture.",
-        "Add seafood in proper order.",
-        "Create socarrat at the end."
-      ],
-      "tags": [
-        "Spanish",
-        "Seafood",
-        "Rice"
-      ],
-      "last_updated": "2025-01-06"
-    },
-    {
       "id": "15",
       "title": "French Onion Soup",
       "description": "Classic French soup with caramelized onions and melted cheese.",

@@ -7,6 +7,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import SwapVertIcon from "@mui/icons-material/SwapVert";
 import EditRecipe from "../components/EditRecipe";
 import Pagination from "../components/Pagination";
+import ShareIcon from "@mui/icons-material/Share";
 
 function Recipe() {
     const [allRecipes, setAllRecipes] = useState([]);
@@ -18,6 +19,7 @@ function Recipe() {
     const [triggerUseEffect, setTriggerUseEffect] = useState(0);
     const [page, setPage] = useState(1);
     const [recipesPerPage, setRecipesPerPage] = useState(6);
+    const [selectedRecipes, setSelectedRecipes] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3000/recipes")
@@ -158,6 +160,28 @@ function Recipe() {
         setEditedRecipe(currentRecipe);
     }
 
+    function handleSelectRecipe(id) {
+        setSelectedRecipes((prevSelected) => {
+            if (prevSelected.includes(id)) {
+                return prevSelected.filter((recipeId) => recipeId !== id);
+            } else {
+                return [...prevSelected, id];
+            }
+        });
+    }
+
+    function handleShare() {
+        const recipesToShare = allRecipes.filter((recipe) =>
+            selectedRecipes.includes(recipe.id)
+        );
+        const emailContent = JSON.stringify(recipesToShare, null, 2);
+
+        const emailLink = `mailto:?subject=Recipes&body=${encodeURIComponent(
+            emailContent
+        )}`;
+        window.location.href = emailLink;
+    }
+
     const lastPostIndex = page * recipesPerPage;
     const firstPostIndex = lastPostIndex - recipesPerPage;
     const currentRecipes = filteredRecipes.slice(firstPostIndex, lastPostIndex);
@@ -168,6 +192,9 @@ function Recipe() {
                 <Search handleSearch={handleSearch} />
                 <button onClick={openAdd} className="add-button primary">
                     Add <AddIcon />
+                </button>
+                <button onClick={handleShare} className="share-button primary">
+                    Share <ShareIcon />
                 </button>
             </div>
             <div className="filter-flex">
@@ -220,6 +247,8 @@ function Recipe() {
                         openPopup={() => handleClick(item.id)}
                         handleDelete={() => handleDelete(item.id)}
                         handleEdit={() => handleEdit(item.id)}
+                        isSelected={selectedRecipes.includes(item.id)}
+                        handleSelectRecipe={handleSelectRecipe}
                     />
                 ))}
             </div>

@@ -34,22 +34,34 @@ const RecipeCard = (props) => {
                     <div className="title-flex">
                         <h3 className="card-title">{props.title}</h3>
 
-                        {isHovered && (
-                            <div className="icons-flex">
-                                <button
-                                    onClick={props.handleEdit}
-                                    className="button-edit button-icon"
-                                >
-                                    <EditIcon />
-                                </button>
-                                <button
-                                    onClick={() => props.handleDelete(props.id)}
-                                    className="button-delete button-icon"
-                                >
-                                    <DeleteIcon />
-                                </button>
-                            </div>
-                        )}
+                        <div className="title-right-flex">
+                            {isHovered && (
+                                <div className="icons-flex">
+                                    <button
+                                        onClick={props.handleEdit}
+                                        className="button-edit button-icon"
+                                    >
+                                        <EditIcon />
+                                    </button>
+                                    <button
+                                        onClick={() =>
+                                            props.handleDelete(props.id)
+                                        }
+                                        className="button-delete button-icon"
+                                    >
+                                        <DeleteIcon />
+                                    </button>
+                                </div>
+                            )}
+                            <input
+                                type="checkbox"
+                                checked={props.isSelected}
+                                onChange={() =>
+                                    props.handleSelectRecipe(props.id)
+                                }
+                                className="checkbox"
+                            />
+                        </div>
                     </div>
                     <p className="card-description">{props.description}</p>
                 </div>
