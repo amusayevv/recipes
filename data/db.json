@@ -1,274 +1,656 @@
 {
-    "recepies": [
-        {
-            "id": 1,
-            "title": "Spaghetti Carbonara",
-            "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-            "ingredients": [
-                "200g spaghetti",
-                "100g pancetta",
-                "2 large eggs",
-                "50g pecorino cheese",
-                "50g parmesan",
-                "Freshly ground black pepper",
-                "Salt"
-            ],
-            "preparation_steps": [
-                "Boil the spaghetti in salted water according to the package instructions.",
-                "Fry the pancetta until crispy.",
-                "Beat the eggs in a bowl, then add the grated cheeses and mix well.",
-                "Drain the spaghetti and return to the pot. Add the pancetta and mix well.",
-                "Remove from heat and quickly add the egg and cheese mixture, stirring constantly to create a creamy sauce.",
-                "Season with freshly ground black pepper and serve immediately."
-            ],
-            "tags": ["Italian", "Pasta", "Quick Meal"],
-            "difficulty_level": "Medium",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 2,
-            "title": "Chocolate Chip Cookies",
-            "description": "Delicious homemade chocolate chip cookies with a crispy edge and chewy center.",
-            "ingredients": [
-                "1 cup unsalted butter",
-                "1 cup white sugar",
-                "1 cup packed brown sugar",
-                "2 large eggs",
-                "2 teaspoons vanilla extract",
-                "3 cups all-purpose flour",
-                "1 teaspoon baking soda",
-                "2 teaspoons hot water",
-                "1/2 teaspoon salt",
-                "2 cups semisweet chocolate chips"
-            ],
-            "preparation_steps": [
-                "Preheat oven to 350°F (175°C).",
-                "Cream together the butter, white sugar, and brown sugar until smooth.",
-                "Beat in the eggs one at a time, then stir in the vanilla.",
-                "Dissolve baking soda in hot water and add to the batter along with salt.",
-                "Stir in flour and chocolate chips.",
-                "Drop by large spoonfuls onto ungreased pans.",
-                "Bake for about 10 minutes, or until edges are nicely browned."
-            ],
-            "tags": ["Dessert", "Cookies", "Sweet"],
-            "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 3,
-            "title": "Caesar Salad",
-            "description": "A fresh, crisp salad with romaine lettuce, croutons, and Caesar dressing.",
-            "ingredients": [
-                "1 head romaine lettuce",
-                "1 cup croutons",
-                "1/2 cup grated Parmesan cheese",
-                "Caesar dressing"
-            ],
-            "preparation_steps": [
-                "Chop the romaine lettuce and place in a large bowl.",
-                "Add croutons and grated Parmesan cheese.",
-                "Drizzle with Caesar dressing and toss to combine.",
-                "Serve immediately."
-            ],
-            "tags": ["Salad", "Vegetarian", "Quick Meal"],
-            "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 4,
-            "title": "Beef Tacos",
-            "description": "Tasty beef tacos with a variety of toppings.",
-            "ingredients": [
-                "500g ground beef",
-                "1 packet taco seasoning",
-                "8 taco shells",
-                "1 cup shredded lettuce",
-                "1 cup diced tomatoes",
-                "1 cup shredded cheese",
-                "Sour cream",
-                "Salsa"
-            ],
-            "preparation_steps": [
-                "Cook the ground beef in a skillet over medium heat until browned.",
-                "Add taco seasoning and water according to the packet instructions.",
-                "Simmer for a few minutes until the sauce thickens.",
-                "Fill taco shells with the beef mixture and top with lettuce, tomatoes, cheese, sour cream, and salsa.",
-                "Serve immediately."
-            ],
-            "tags": ["Mexican", "Tacos", "Quick Meal"],
-            "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 5,
-            "title": "Chicken Curry",
-            "description": "A flavorful chicken curry with a rich, spicy sauce.",
-            "ingredients": [
-                "500g chicken breast, diced",
-                "1 onion, chopped",
-                "2 cloves garlic, minced",
-                "1 tablespoon ginger, minced",
-                "2 tablespoons curry powder",
-                "1 can coconut milk",
-                "1 cup chicken broth",
-                "Salt",
-                "Pepper",
-                "Fresh cilantro"
-            ],
-            "preparation_steps": [
-                "In a large pot, sauté the onion, garlic, and ginger until fragrant.",
-                "Add the chicken and cook until browned.",
-                "Stir in the curry powder and cook for another minute.",
-                "Add the coconut milk and chicken broth, and bring to a simmer.",
-                "Cook for 20 minutes, or until the chicken is cooked through and the sauce has thickened.",
-                "Season with salt and pepper, and garnish with fresh cilantro before serving."
-            ],
-            "tags": ["Indian", "Curry", "Spicy"],
-            "difficulty_level": "Medium",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 6,
-            "title": "Pancakes",
-            "description": "Fluffy pancakes perfect for a weekend breakfast.",
-            "ingredients": [
-                "1 cup all-purpose flour",
-                "2 tablespoons sugar",
-                "1 tablespoon baking powder",
-                "1/2 teaspoon salt",
-                "1 cup milk",
-                "1 large egg",
-                "2 tablespoons melted butter",
-                "1 teaspoon vanilla extract"
-            ],
-            "preparation_steps": [
-                "In a large bowl, whisk together the flour, sugar, baking powder, and salt.",
-                "In another bowl, whisk together the milk, egg, melted butter, and vanilla extract.",
-                "Pour the wet ingredients into the dry ingredients and stir until just combined.",
-                "Heat a non-stick skillet over medium heat and grease lightly with butter.",
-                "Pour 1/4 cup of batter onto the skillet and cook until bubbles form on the surface.",
-                "Flip and cook until golden brown on the other side.",
-                "Serve with your favorite toppings."
-            ],
-            "tags": ["Breakfast", "Pancakes", "Sweet"],
-            "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 7,
-            "title": "Guacamole",
-            "description": "A creamy and delicious avocado dip.",
-            "ingredients": [
-                "3 ripe avocados",
-                "1 lime, juiced",
-                "1 teaspoon salt",
-                "1/2 cup diced onion",
-                "3 tablespoons chopped fresh cilantro",
-                "2 roma tomatoes, diced",
-                "1 teaspoon minced garlic",
-                "1 pinch ground cayenne pepper"
-            ],
-            "preparation_steps": [
-                "In a medium bowl, mash together the avocados, lime juice, and salt.",
-                "Mix in the onion, cilantro, tomatoes, and garlic.",
-                "Stir in cayenne pepper.",
-                "Refrigerate 1 hour for best flavor, or serve immediately."
-            ],
-            "tags": ["Mexican", "Dip", "Vegetarian"],
-            "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 8,
-            "title": "Lasagna",
-            "description": "A hearty and cheesy lasagna with layers of pasta, meat sauce, and cheese.",
-            "ingredients": [
-                "12 lasagna noodles",
-                "500g ground beef",
-                "1 onion, chopped",
-                "2 cloves garlic, minced",
-                "1 jar marinara sauce",
-                "500g ricotta cheese",
-                "2 cups shredded mozzarella cheese",
-                "1/2 cup grated Parmesan cheese",
-                "1 egg",
-                "2 tablespoons chopped fresh parsley",
-                "Salt",
-                "Pepper"
-            ],
-            "preparation_steps": [
-                "Preheat oven to 375°F (190°C).",
-                "Cook the lasagna noodles according to the package instructions.",
-                "In a large skillet, cook the ground beef, onion, and garlic until browned.",
-                "Stir in the marinara sauce and simmer for 10 minutes.",
-                "In a bowl, mix together the ricotta cheese, 1 1/2 cups mozzarella cheese, Parmesan cheese, egg, parsley, salt, and pepper.",
-                "Spread a thin layer of meat sauce in the bottom of a baking dish.",
-                "Layer with lasagna noodles, cheese mixture, and meat sauce. Repeat layers.",
-                "Top with remaining mozzarella cheese.",
-                "Cover with foil and bake for 25 minutes. Remove foil and bake for an additional 25 minutes.",
-                "Let cool for 15 minutes before serving."
-            ],
-            "tags": ["Italian", "Pasta", "Comfort Food"],
-            "difficulty_level": "Hard",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 9,
-            "title": "Chicken Alfredo",
-            "description": "Creamy chicken Alfredo pasta with a rich and cheesy sauce.",
-            "ingredients": [
-                "200g fettuccine pasta",
-                "2 tablespoons butter",
-                "2 cloves garlic, minced",
-                "1 cup heavy cream",
-                "1 cup grated Parmesan cheese",
-                "500g chicken breast, cooked and sliced",
-                "Salt",
-                "Pepper",
-                "Fresh parsley"
-            ],
-            "preparation_steps": [
-                "Cook the fettuccine pasta according to the package instructions.",
-                "In a large skillet, melt the butter over medium heat.",
-                "Add the garlic and cook until fragrant.",
-                "Stir in the heavy cream and bring to a simmer.",
-                "Add the Parmesan cheese and stir until melted and smooth.",
-                "Add the cooked chicken and pasta to the skillet and toss to coat.",
-                "Season with salt and pepper, and garnish with fresh parsley before serving."
-            ],
-            "tags": ["Italian", "Pasta", "Comfort Food"],
-            "difficulty_level": "Medium",
-            "last_updated": "2023-10-05T12:00:00Z"
-        },
-        {
-            "id": 10,
-            "title": "Vegetable Stir Fry",
-            "description": "A quick and healthy vegetable stir fry with a savory sauce.",
-            "ingredients": [
-                "2 tablespoons vegetable oil",
-                "1 red bell pepper, sliced",
-                "1 yellow bell pepper, sliced",
-                "1 broccoli head, cut into florets",
-                "2 carrots, sliced",
-                "1 zucchini, sliced",
-                "2 cloves garlic, minced",
-                "1/4 cup soy sauce",
-                "2 tablespoons hoisin sauce",
-                "1 tablespoon cornstarch",
-                "1/4 cup water",
-                "Cooked rice"
-            ],
-            "preparation_steps": [
-                "Heat the vegetable oil in a large skillet or wok over medium-high heat.",
-                "Add the bell peppers, broccoli, carrots, zucchini, and garlic, and stir-fry for 5-7 minutes.",
-                "In a small bowl, whisk together the soy sauce, hoisin sauce, cornstarch, and water.",
-                "Pour the sauce over the vegetables and stir to coat.",
-                "Cook for another 2-3 minutes, or until the sauce has thickened.",
-                "Serve the stir fry over cooked rice."
-            ],
-            "tags": ["Asian", "Vegetarian", "Quick Meal"],
-            "difficulty_level": "Easy",
-            "last_updated": "2023-10-05T12:00:00Z"
-        }
-    ]
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Caesar Salad",
+      "description": "A fresh, crisp salad with romaine lettuce, croutons, and Caesar dressing.",
+      "ingredients": [
+        "1 head romaine lettuce",
+        "1 cup croutons",
+        "1/2 cup grated Parmesan cheese",
+        "Caesar dressing"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Chop the romaine lettuce and place in a large bowl.",
+        "Add croutons and grated Parmesan cheese.",
+        "Drizzle with Caesar dressing and toss to combine.",
+        "Serve immediately."
+      ],
+      "tags": [
+        "Salad",
+        "Vegetarian",
+        "Quick Meal"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "title": "Beef Tacos",
+      "description": "Tasty beef tacos with a variety of toppings.",
+      "ingredients": [
+        "500g ground beef",
+        "1 packet taco seasoning",
+        "8 taco shells",
+        "1 cup shredded lettuce",
+        "1 cup diced tomatoes",
+        "1 cup shredded cheese",
+        "Sour cream",
+        "Salsa"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Cook the ground beef in a skillet over medium heat until browned.",
+        "Add taco seasoning and water according to the packet instructions.",
+        "Simmer for a few minutes until the sauce thickens.",
+        "Fill taco shells with the beef mixture and top with lettuce",
+        "tomatoes",
+        "cheese",
+        "sour cream",
+        "and salsa.",
+        "Serve immediately."
+      ],
+      "tags": [
+        "Mexican",
+        "Tacos",
+        "Quick Meal"
+      ],
+      "last_updated": "2025-01-07",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Chicken Curry",
+      "description": "A flavorful chicken curry with a rich, spicy sauce.",
+      "ingredients": [
+        "500g chicken breast, diced",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon ginger, minced",
+        "2 tablespoons curry powder",
+        "1 can coconut milk",
+        "1 cup chicken broth",
+        "Salt",
+        "Pepper",
+        "Fresh cilantro"
+      ],
+      "preparation_steps": [
+        "In a large pot, sauté the onion, garlic, and ginger until fragrant.",
+        "Add the chicken and cook until browned.",
+        "Stir in the curry powder and cook for another minute.",
+        "Add the coconut milk and chicken broth, and bring to a simmer.",
+        "Cook for 20 minutes, or until the chicken is cooked through and the sauce has thickened.",
+        "Season with salt and pepper, and garnish with fresh cilantro before serving."
+      ],
+      "tags": [
+        "Indian",
+        "Curry",
+        "Spicy"
+      ],
+      "difficulty_level": "Medium",
+      "last_updated": "2023-10-05"
+    },
+    {
+      "id": "4",
+      "title": "Pancakes",
+      "description": "Fluffy pancakes perfect for a weekend breakfast.",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 tablespoons sugar",
+        "1 tablespoon baking powder",
+        "1/2 teaspoon salt",
+        "1 cup milk",
+        "1 large egg",
+        "2 tablespoons melted butter",
+        "1 teaspoon vanilla extract"
+      ],
+      "preparation_steps": [
+        "In a large bowl, whisk together the flour, sugar, baking powder, and salt.",
+        "In another bowl, whisk together the milk, egg, melted butter, and vanilla extract.",
+        "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+        "Heat a non-stick skillet over medium heat and grease lightly with butter.",
+        "Pour 1/4 cup of batter onto the skillet and cook until bubbles form on the surface.",
+        "Flip and cook until golden brown on the other side.",
+        "Serve with your favorite toppings."
+      ],
+      "tags": [
+        "Breakfast",
+        "Pancakes",
+        "Sweet"
+      ],
+      "difficulty_level": "Easy",
+      "last_updated": "2023-10-05"
+    },
+    {
+      "id": "5",
+      "title": "Lasagna",
+      "description": "A hearty and cheesy lasagna with layers of pasta, meat sauce, and cheese.",
+      "ingredients": [
+        "12 lasagna noodles",
+        "500g ground beef",
+        "1 onion",
+        "chopped",
+        "2 cloves garlic",
+        "minced",
+        "1 jar marinara sauce",
+        "500g ricotta cheese",
+        "2 cups shredded mozzarella cheese",
+        "1/2 cup grated Parmesan cheese",
+        "1 egg",
+        "2 tablespoons chopped fresh parsley",
+        "Salt",
+        "Pepper"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Preheat oven to 375°F (190°C).",
+        "Cook the lasagna noodles according to the package instructions.",
+        "In a large skillet",
+        "cook the ground beef",
+        "onion",
+        "and garlic until browned.",
+        "Stir in the marinara sauce and simmer for 10 minutes.",
+        "In a bowl",
+        "mix together the ricotta cheese",
+        "1 1/2 cups mozzarella cheese",
+        "Parmesan cheese",
+        "egg",
+        "parsley",
+        "salt",
+        "and pepper.",
+        "Spread a thin layer of meat sauce in the bottom of a baking dish.",
+        "Layer with lasagna noodles",
+        "cheese mixture",
+        "and meat sauce. Repeat layers.",
+        "Top with remaining mozzarella cheese.",
+        "Cover with foil and bake for 25 minutes. Remove foil and bake for an additional 25 minutes.",
+        "Let cool for 15 minutes before serving."
+      ],
+      "tags": [
+        "Italian",
+        "Pasta",
+        "Comfort Food"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "6",
+      "title": "Chicken Alfredo",
+      "description": "Creamy chicken Alfredo pasta with a rich and cheesy sauce.",
+      "ingredients": [
+        "200g fettuccine pasta",
+        "2 tablespoons butter",
+        "2 cloves garlic, minced",
+        "1 cup heavy cream",
+        "1 cup grated Parmesan cheese",
+        "500g chicken breast, cooked and sliced",
+        "Salt",
+        "Pepper",
+        "Fresh parsley"
+      ],
+      "preparation_steps": [
+        "Cook the fettuccine pasta according to the package instructions.",
+        "In a large skillet, melt the butter over medium heat.",
+        "Add the garlic and cook until fragrant.",
+        "Stir in the heavy cream and bring to a simmer.",
+        "Add the Parmesan cheese and stir until melted and smooth.",
+        "Add the cooked chicken and pasta to the skillet and toss to coat.",
+        "Season with salt and pepper, and garnish with fresh parsley before serving."
+      ],
+      "tags": [
+        "Italian",
+        "Pasta",
+        "Comfort Food"
+      ],
+      "difficulty_level": "Medium",
+      "last_updated": "2023-10-05"
+    },
+    {
+      "id": "7",
+      "title": "Plov",
+      "description": "National food of Azerbaijani cuisine",
+      "ingredients": [
+        "rice",
+        "meat",
+        "oil"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "step1",
+        "step2",
+        "step3"
+      ],
+      "tags": [
+        "Azerbaijan",
+        "National",
+        "Meat"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "8",
+      "title": "Carbonara",
+      "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 large eggs",
+        "50g pecorino cheese",
+        "50g parmesan",
+        "Freshly ground black pepper",
+        "Salt"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Boil the spaghetti in salted water according to the package instructions.",
+        "Fry the pancetta until crispy.",
+        "Beat the eggs in a bowl",
+        "then add the grated cheeses and mix well.",
+        "Drain the spaghetti and return to the pot. Add the pancetta and mix well.",
+        "Remove from heat and quickly add the egg and cheese mixture",
+        "stirring constantly to create a creamy sauce.",
+        "Season with freshly ground black pepper and serve immediately."
+      ],
+      "tags": [
+        "Italian",
+        "Pasta",
+        "Quick Meal"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "9",
+      "title": "Vegetable Stir Fry",
+      "description": "A quick and healthy vegetable stir fry with a savory sauce.",
+      "ingredients": [
+        "2 tablespoons vegetable oil",
+        "1 red bell pepper",
+        "sliced",
+        "1 yellow bell pepper",
+        "sliced",
+        "1 broccoli head",
+        "cut into florets",
+        "2 carrots",
+        "sliced",
+        "1 zucchini",
+        "sliced",
+        "2 cloves garlic",
+        "minced",
+        "1/4 cup soy sauce",
+        "2 tablespoons hoisin sauce",
+        "1 tablespoon cornstarch",
+        "1/4 cup water",
+        "Cooked rice"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Heat the vegetable oil in a large skillet or wok over medium-high heat.",
+        "Add the bell peppers",
+        "broccoli",
+        "carrots",
+        "zucchini",
+        "and garlic",
+        "and stir-fry for 5-7 minutes.",
+        "In a small bowl",
+        "whisk together the soy sauce",
+        "hoisin sauce",
+        "cornstarch",
+        "and water.",
+        "Pour the sauce over the vegetables and stir to coat.",
+        "Cook for another 2-3 minutes",
+        "or until the sauce has thickened.",
+        "Serve the stir fry over cooked rice."
+      ],
+      "tags": [
+        "Asian",
+        "Vegetarian",
+        "Quick Meal"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "10",
+      "title": "Dolma",
+      "description": "National food of Azerbaijani cuisine",
+      "ingredients": [
+        "meat",
+        "rice",
+        "grape leaves"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "step1",
+        "step2",
+        "step3"
+      ],
+      "tags": [
+        "Azerbaijan",
+        "National",
+        "Meat"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "11",
+      "title": "Baklava",
+      "description": "A sweet pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.",
+      "ingredients": [
+        "1 package phyllo dough",
+        "1 cup butter",
+        "3 cups chopped nuts",
+        "1 teaspoon ground cinnamon",
+        "1 cup water",
+        "1 cup white sugar",
+        "1 teaspoon vanilla extract",
+        "1/2 cup honey"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Preheat oven to 350°F (175°C).",
+        "Butter the bottom and sides of a 9x13-inch baking dish.",
+        "Layer 10 sheets of phyllo dough in the dish",
+        "brushing each sheet with melted butter.",
+        "In a bowl",
+        "mix together the chopped nuts and cinnamon.",
+        "Sprinkle a layer of the nut mixture over the phyllo dough.",
+        "Repeat the layers until all the nut mixture is used",
+        "ending with a top layer of phyllo dough.",
+        "Cut the baklava into diamond shapes using a sharp knife.",
+        "Bake for 50-60 minutes",
+        "or until golden brown and crisp.",
+        "While the baklava is baking",
+        "combine the water",
+        "sugar",
+        "vanilla extract",
+        "and honey in a saucepan.",
+        "Bring to a boil and simmer for 10 minutes.",
+        "Pour the hot syrup over the hot baklava",
+        "and let cool before serving."
+      ],
+      "tags": [
+        "Dessert",
+        "Sweet",
+        "Azerbaijan"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "12",
+      "title": "Sushi",
+      "description": "A Japanese dish consisting of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits.",
+      "ingredients": [
+        "2 cups sushi rice",
+        "2 1/2 cups water",
+        "1/2 cup rice vinegar",
+        "1/4 cup sugar",
+        "1 teaspoon salt",
+        "Nori seaweed sheets",
+        "Assorted fillings (e.g., fish, avocado, cucumber, crab)",
+        "Soy sauce",
+        "Wasabi",
+        "Pickled ginger"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Rinse the sushi rice in a fine-mesh strainer until the water runs clear.",
+        "Combine the rice and water in a rice cooker and cook according to the manufacturer's instructions.",
+        "In a small saucepan",
+        "combine the rice vinegar",
+        "sugar",
+        "and salt. Heat over low heat until the sugar dissolves.",
+        "Transfer the cooked rice to a large bowl and fold in the vinegar mixture.",
+        "Let the rice cool to room temperature.",
+        "Place a sheet of nori on a bamboo sushi mat",
+        "and spread a thin layer of rice over the nori",
+        "leaving a 1-inch border at the top.",
+        "Arrange the fillings in a line across the center of the rice.",
+        "Roll the sushi tightly using the bamboo mat",
+        "and seal the edge with a little water.",
+        "Slice the roll into bite-sized pieces and serve with soy sauce",
+        "wasabi",
+        "and pickled ginger."
+      ],
+      "tags": [
+        "Japanese",
+        "Sushi",
+        "Seafood"
+      ],
+      "last_updated": "2025-01-05"
+    },
+    {
+      "id": "13",
+      "title": "Vietnamese Pho",
+      "description": "Traditional Vietnamese noodle soup with rich broth and herbs.",
+      "ingredients": [
+        "Rice noodles",
+        "Beef bones",
+        "Beef slices",
+        "Bean sprouts",
+        "Thai basil",
+        "Cilantro",
+        "Star anise",
+        "Cinnamon sticks",
+        "Fish sauce"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Simmer bones with spices for 6-8 hours to make broth.",
+        "Cook rice noodles according to package.",
+        "Prepare herb plate with basil, sprouts, and lime.",
+        "Assemble bowls with noodles and raw beef slices.",
+        "Pour hot broth over to cook beef.",
+        "Serve with herbs and sauces."
+      ],
+      "tags": [
+        "Vietnamese",
+        "Soup",
+        "Comfort Food"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "15",
+      "title": "French Onion Soup",
+      "description": "Classic French soup with caramelized onions and melted cheese.",
+      "ingredients": [
+        "6 large onions",
+        "Beef broth",
+        "French bread",
+        "Gruyere cheese",
+        "Butter",
+        "White wine",
+        "Thyme",
+        "Bay leaves"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Slowly caramelize onions for 1 hour.",
+        "Add wine and reduce.",
+        "Add broth and herbs, simmer for 30 minutes.",
+        "Toast bread slices.",
+        "Fill bowls with soup, top with bread and cheese.",
+        "Broil until cheese is bubbly and brown."
+      ],
+      "tags": [
+        "French",
+        "Soup",
+        "Comfort Food"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "16",
+      "title": "Tandoori Chicken",
+      "description": "Indian-style yogurt marinated chicken cooked in high heat.",
+      "ingredients": [
+        "Chicken legs and thighs",
+        "Yogurt",
+        "Tandoori spice mix",
+        "Lemon juice",
+        "Ginger paste",
+        "Garlic paste",
+        "Red food coloring (optional)",
+        "Mint chutney"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Make marinade with yogurt and spices.",
+        "Marinate chicken for 4-24 hours.",
+        "Preheat oven to 450°F.",
+        "Cook chicken, basting occasionally.",
+        "Finish under broiler for char.",
+        "Serve with mint chutney and naan."
+      ],
+      "tags": [
+        "Indian",
+        "Chicken",
+        "Spicy"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "17",
+      "title": "Thai Green Curry",
+      "description": "Aromatic coconut curry with vegetables and chicken.",
+      "ingredients": [
+        "Green curry paste",
+        "Coconut milk",
+        "Chicken breast",
+        "Thai eggplants",
+        "Bamboo shoots",
+        "Thai basil",
+        "Fish sauce",
+        "Palm sugar"
+      ],
+      "difficulty_level": "Medium",
+      "preparation_steps": [
+        "Fry curry paste in coconut cream.",
+        "Add chicken and cook through.",
+        "Add remaining coconut milk and vegetables.",
+        "Season with fish sauce and palm sugar.",
+        "Simmer until vegetables are tender.",
+        "Finish with Thai basil."
+      ],
+      "tags": [
+        "Thai",
+        "Curry",
+        "Spicy"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "18",
+      "title": "Chocolate Soufflé",
+      "description": "Light and airy chocolate dessert that rises dramatically.",
+      "ingredients": [
+        "Dark chocolate",
+        "Butter",
+        "Eggs",
+        "Sugar",
+        "Vanilla extract",
+        "Flour",
+        "Salt",
+        "Powdered sugar"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Prepare ramekins with butter and sugar.",
+        "Melt chocolate and butter.",
+        "Separate eggs and make base mixture.",
+        "Whip egg whites to stiff peaks.",
+        "Fold whites into chocolate base.",
+        "Fill ramekins and bake immediately.",
+        "Serve right away with powdered sugar."
+      ],
+      "tags": [
+        "French",
+        "Dessert",
+        "Chocolate"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "19",
+      "title": "Beef Wellington",
+      "description": "Luxurious dish of beef tenderloin wrapped in pastry.",
+      "ingredients": [
+        "Beef tenderloin",
+        "Puff pastry",
+        "Mushroom duxelles",
+        "Prosciutto",
+        "Egg wash",
+        "Dijon mustard",
+        "Thyme",
+        "Sea salt"
+      ],
+      "difficulty_level": "Hard",
+      "preparation_steps": [
+        "Sear beef and coat with mustard.",
+        "Make mushroom duxelles.",
+        "Layer prosciutto and duxelles.",
+        "Wrap beef in pastry.",
+        "Chill thoroughly.",
+        "Brush with egg wash and score.",
+        "Bake until golden and desired doneness."
+      ],
+      "tags": [
+        "British",
+        "Beef",
+        "Special Occasion"
+      ],
+      "last_updated": "2025-01-06"
+    },
+    {
+      "id": "21",
+      "title": "Pumpkin pie",
+      "description": "Pie made with pumpkin",
+      "ingredients": [
+        "pumpkin",
+        "flour",
+        "sugar",
+        "water",
+        "milk"
+      ],
+      "difficulty_level": "Easy",
+      "preparation_steps": [
+        "make biscuit",
+        "make cream",
+        "combine"
+      ],
+      "tags": [
+        "dessert",
+        "cake"
+      ],
+      "last_updated": "2025-01-07"
+    },
+    {
+      "title": "Tiramisu",
+      "description": "Classic Italian dessert with coffee-soaked ladyfingers.",
+      "ingredients": [
+        "Ladyfinger cookies",
+        "Mascarpone cheese",
+        "Strong coffee",
+        "Eggs",
+        "Sugar",
+        "Cocoa powder",
+        "Marsala wine (optional)",
+        "Vanilla extract"
+      ],
+      "difficulty_level": "Easy",
+      "preparation_steps": [
+        "Prepare strong coffee and let cool.",
+        "Make mascarpone cream mixture.",
+        "Dip ladyfingers in coffee mixture.",
+        "Layer cookies and cream mixture.",
+        "Refrigerate for at least 4 hours.",
+        "Dust with cocoa before serving"
+      ],
+      "tags": [
+        "Italian",
+        "Dessert",
+        "No-Bake"
+      ],
+      "last_updated": "2025-01-07",
+      "id": "22"
+    }
+  ]
 }
