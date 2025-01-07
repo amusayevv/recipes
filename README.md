@@ -14,13 +14,13 @@ This **Recipe Manager App is a React-based program** made to make it easier for 
 2. **Recipe Page**
 **Recipe Structure**
 Each recipe includes:
-*Title: Descriptive name of the recipe.
-*Description: Brief summary of the recipe.
-*Ingredients: Listed format for required ingredients.
-*Preparation Steps: Detailed instructions in a numbered list or paragraph format.
-*Tags: Categories such as “Dessert,” “Vegetarian,” “Quick Meal,” etc.
-*Difficulty Level: Easy, Medium, or Hard.
-*Last Updated: Automatically updates when a recipe is created or modified.
+* Title: Descriptive name of the recipe.
+* Description: Brief summary of the recipe.
+* Ingredients: Listed format for required ingredients.
+* Preparation Steps: Detailed instructions in a numbered list or paragraph format.
+* Tags: Categories such as “Dessert,” “Vegetarian,” “Quick Meal,” etc.
+* Difficulty Level: Easy, Medium, or Hard.
+* Last Updated: Automatically updates when a recipe is created or modified.
 
 **Recipe Managament**
 * Create Recipes
