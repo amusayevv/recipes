@@ -148,11 +148,9 @@ function Recipe() {
         setEditedRecipe(currentRecipe);
     }
 
-    useEffect(() => {
-        const lastPostIndex = page * recipesPerPage;
-        const firstPostIndex = lastPostIndex - recipesPerPage;
-        setFilteredRecipes(allRecipes.slice(firstPostIndex, lastPostIndex));
-    }, [allRecipes, page, recipesPerPage]);
+    const lastPostIndex = page * recipesPerPage;
+    const firstPostIndex = lastPostIndex - recipesPerPage;
+    const currentRecipes = filteredRecipes.slice(firstPostIndex, lastPostIndex);
 
     return (
         <div>
@@ -200,7 +198,7 @@ function Recipe() {
                 </button>
             </div>
             <div className="cards-flex">
-                {filteredRecipes.map((item) => (
+                {currentRecipes.map((item) => (
                     <RecipeCard
                         key={item.id}
                         id={item.id}
@@ -285,6 +283,7 @@ function Recipe() {
                 recipesPerPage={recipesPerPage}
                 totalRecipes={allRecipes.length}
                 paginate={setPage}
+                currentPage={page}
             />
         </div>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Pagination({ recipesPerPage, totalRecipes, paginate }) {
+function Pagination({ recipesPerPage, totalRecipes, paginate, currentPage }) {
     const pageNumbers = [];
 
     for (let i = 1; i <= Math.ceil(totalRecipes / recipesPerPage); i++) {
@@ -13,6 +13,15 @@ function Pagination({ recipesPerPage, totalRecipes, paginate }) {
                 {pageNumbers.map((number) => (
                     <li key={number} className="page-item">
                         <button
+                            id={number}
+                            style={
+                                number === currentPage
+                                    ? {
+                                          backgroundColor: "#0e352d",
+                                          color: "white",
+                                      }
+                                    : {}
+                            }
                             onClick={() => paginate(number)}
                             className="page-link"
                         >

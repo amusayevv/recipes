@@ -25,7 +25,6 @@
       "last_updated": "2025-01-05"
     },
     {
-      "id": "2",
       "title": "Beef Tacos",
       "description": "Tasty beef tacos with a variety of toppings.",
       "ingredients": [
@@ -38,7 +37,7 @@
         "Sour cream",
         "Salsa"
       ],
-      "difficulty_level": "Medium",
+      "difficulty_level": "Hard",
       "preparation_steps": [
         "Cook the ground beef in a skillet over medium heat until browned.",
         "Add taco seasoning and water according to the packet instructions.",
@@ -55,7 +54,8 @@
         "Tacos",
         "Quick Meal"
       ],
-      "last_updated": "2025-01-05"
+      "last_updated": "2025-01-07",
+      "id": "2"
     },
     {
       "id": "3",
@@ -632,6 +632,29 @@
       "last_updated": "2025-01-06"
     },
     {
+      "id": "21",
+      "title": "Pumpkin pie",
+      "description": "Pie made with pumpkin",
+      "ingredients": [
+        "pumpkin",
+        "flour",
+        "sugar",
+        "water",
+        "milk"
+      ],
+      "difficulty_level": "Easy",
+      "preparation_steps": [
+        "make biscuit",
+        "make cream",
+        "combine"
+      ],
+      "tags": [
+        "dessert",
+        "cake"
+      ],
+      "last_updated": "2025-01-07"
+    },
+    {
       "title": "Tiramisu",
       "description": "Classic Italian dessert with coffee-soaked ladyfingers.",
       "ingredients": [
@@ -651,15 +674,15 @@
         "Dip ladyfingers in coffee mixture.",
         "Layer cookies and cream mixture.",
         "Refrigerate for at least 4 hours.",
-        "Dust with cocoa before serving."
+        "Dust with cocoa before serving"
       ],
       "tags": [
         "Italian",
         "Dessert",
         "No-Bake"
       ],
-      "last_updated": "2025-01-06",
-      "id": "20"
+      "last_updated": "2025-01-07",
+      "id": "22"
     }
   ]
 }
