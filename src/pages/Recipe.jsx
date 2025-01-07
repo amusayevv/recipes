@@ -23,8 +23,18 @@ function Recipe() {
         fetch("http://localhost:3000/recipes")
             .then((res) => res.json())
             .then((data) => {
-                setAllRecipes(data);
-                setFilteredRecipes(data);
+                setAllRecipes(
+                    data.sort(
+                        (a, b) =>
+                            new Date(b.last_updated) - new Date(a.last_updated)
+                    )
+                );
+                setFilteredRecipes(
+                    data.sort(
+                        (a, b) =>
+                            new Date(b.last_updated) - new Date(a.last_updated)
+                    )
+                );
             })
             .catch((err) => console.error("Error fetching recipes:", err));
     }, [triggerUseEffect]);

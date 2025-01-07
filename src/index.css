@@ -393,3 +393,7 @@ nav {
     font-family: Outfit;
     font-style: normal;
 }
+
+.page-item > button:hover {
+    background: #8a9e9a;
+}
