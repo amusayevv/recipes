@@ -34,6 +34,8 @@ h1 {
     background: #0e352d;
     color: white;
     font-family: Radley;
+    max-height: 100%;
+    overflow: scroll;
 }
 
 .cards-flex {
@@ -151,6 +153,8 @@ button {
     justify-content: center;
     align-items: center;
     font-style: italic;
+    display: flex;
+    gap: 8px;
 }
 
 button:hover {
@@ -162,6 +166,74 @@ button:hover {
     gap: 16px;
 }
 
+
+/* home page design */
+
+.header-h2{
+    font-size: 35px;
+    /* font-family: 'Playfair Display', serif; */
+ 
+}
+
+.header-h3{
+    color: #0e352d;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.paragraph{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+   
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10rem;
+    border: 1px solid #dfe2df; 
+    border-radius: 40px;  
+    background-image: url("image/food.jpg");
+}
+
+.feature{
+    text-align: center;
+    padding: 2rem 1rem; 
+} 
+
+.icon{
+    font-size: 2rem;
+    color: #ff5722;
+    margin-bottom: 0.5rem;
+}
+
+.feature-align{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-style{
+    flex: 1;
+    max-width: 350px;
+    padding: 2rem;
+    background: #eef7ee; 
+    border: 1px solid #dfe2df; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.new{
+    text-align: center;
+    margin-bottom: 9px;  
+    font-size: 35px;
+}
+
+
+=======
 #search {
 }
 
@@ -184,12 +256,25 @@ button:hover {
     align-items: center;
     padding: 0 100px;
 }
+.add-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
 
 .popup-bg {
     width: 100%;
     height: 100%;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #00000080;
@@ -198,4 +283,210 @@ button:hover {
 .recipe-popup > .card {
     z-index: 3;
     padding: 24px 40px;
+}
+
+input,
+select {
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-family: Outfit;
+    box-shadow: none;
+    border: none;
+    /* border: 2px solid #0e352d; */
+    padding: 8px;
+    background: #cfdecf;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid #0e352d;
+}
+
+button.primary {
+    background: #0e352d;
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-family: Outfit;
+    box-shadow: none;
+    border: none;
+    padding: 8px 16px;
+    font-style: normal;
+    width: auto;
+}
+
+button.primary:hover {
+    background: #8a9e9a;
+}
+
+.search-flex {
+    display: flex;
+    gap: 8px;
+}
+
+ul > p,
+ol > p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.add {
+    z-index: 3;
+    max-width: 640px;
+    background: #dff0df;
+    padding: 20px 20px 4px 20px;
+    border-radius: 16px;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.add-heading {
+    color: #0b362f;
+    margin-bottom: 24px;
+}
+
+.add-input {
+    margin-bottom: 20px;
+}
+
+form > .add-button {
+    width: 100%;
+}
+
+.add-heading-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-heading-flex > button > svg {
+    width: 32px;
+    height: 32px;
+}
+
+.add-heading-flex > button {
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-flex {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.filter-flex > svg {
+    width: 32px;
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.filter-flex > select {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.filter-flex > button {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.title-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.icons-flex {
+    display: flex;
+    gap: 8px;
+}
+
+.card-text {
+    width: 100%;
+}
+
+.card-top-cnt {
+    width: 100%;
+}
+
+.button-icon {
+    background: none;
+    color: white;
+}
+
+nav {
+    width: 100%;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.page-item {
+    font-size: 20px;
+    font-weight: 300;
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+}
+
+.page-item > button {
+    background: #cfdecf;
+    color: #0e352d;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-family: Outfit;
+    font-style: normal;
+}
+
+.page-item > button:hover {
+    background: #8a9e9a;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title-right-flex {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: end;
+}
+
+.latest__recipe {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.latest__recipe > .card {
+    padding: 40px 60px;
+    margin-top: -40px;
 }
