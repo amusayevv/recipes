@@ -366,7 +366,7 @@ const DraggableRecipeCard = ({ id, index, moveRecipe, ...props }) => {
         cursor: "move",
       }}
     >
-      <RecipeCard {...props} />
+      <RecipeCard {...props} id={id} />
     </div>
   );
 };
